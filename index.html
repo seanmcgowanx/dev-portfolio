@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="element">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <!-- For Android -->
+    <meta name="theme-color" content="#11194d">
+    <!-- For iOS -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Dev Portfolio</title>
+    <!--Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <!--Script-->
+    <script type="module" src="./index.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="branding-header">
+            <h1>Sean McGowan</h1>
+            <p>Frontend Developer</p>
+        </div>
+        <div>
+            <a href="./docs/Sean McGowan Resume.pdf" download="Sean McGowan Resume.pdf" class="nav-item">
+                <i class="fa-solid fa-download"></i>Download CV
+            </a>            
+            <a href="#footer" class="nav-item">
+                <span>Contact</span>
+            </a>
+            <a class="nav-item menu">
+                <span>About</span>
+            </a>
+            <i class="fa-solid fa-bars menu" id="menu-button"></i>
+        </div>
+        <!-- Hidden Menu-->
+        <div id="menu">
+            <i class="fa-solid fa-arrow-left back-arrow" id="back-arrow"></i>
+            <div class="h-1"></div>
+            <div class="branding-menu">
+                <h1>Sean McGowan</h1>
+                <p>Frontend Developer</p>
+            </div>
+            <div class="avatar">
+                <img id='avatar' alt="avatar" src="./icons/avatar.jpg" />
+            </div>
+            <div class="contact">
+                <span>
+                    <i class="fa-solid fa-phone"></i>
+                    <p><a href="tel:+18084303271">(808)-430-3271</a></p>
+                </span>
+                <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p><a href="mailto:seanmcgowanx@gmail.com">seanmcgowanx@gmail.com</a></p>
+                </span>
+                <span>
+                    <i class="fa-solid fa-file"></i>
+                    <a href="./docs/Sean McGowan Resume.pdf" target="_blank">Resume / CV</a>
+                </span>
+            </div>            
+            <hr class="menu-break">           
+            <div class="about-me">
+                I began my career as a physicist, where I discovered my love for coding through data analysis. Wanting to explore more creative work, I transitioned to frontend development and now enjoy building applications with clean, elegant UIs.
+            </div>
+            <hr class="menu-break">
+            <div class="h-2"></div>
+        </div>
+    </header>
+
+    <div class="tech-project-flex">
+        <!-- Tech Stack -->
+        <div class="tech-flex">
+            <div class="h-2"></div>
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="h-1"></div>
+            <section class="tech-section">
+                <div class="tech-item">
+                    <img alt="tech-icon" src="./icons/React.png"/>
+                    <p class="icon-text">React JS</p>
+                </div>
+                <div class="tech-item">
+                    <img alt="tech-icon" src="./icons/JavaScript.png"/>
+                    <p class="icon-text">JavaScript</p>
+                </div>
+                <div class="tech-item">
+                    <img alt="tech-icon" src="./icons/TypeScript.png"/>
+                    <p class="icon-text">TypeScript</p>
+                </div>
+                <div class="tech-item">
+                    <img alt="tech-icon" src="./icons/Node.js.png"/>
+                    <p class="icon-text">Node.js</p>
+                </div>
+                <div class="tech-item">
+                    <img alt="tech-icon" src="./icons/NPM.png"/>
+                    <p class="icon-text">NPM</p>
+                </div>
+                <div class="tech-item">
+                    <img alt="tech-icon" src="./icons/Firebase.png"/>
+                    <p class="icon-text">Firebase</p>
+                </div>
+                <div class="tech-item">
+                    <img alt="tech-icon" src="./icons/Figma.png"/>
+                    <p class="icon-text">Figma</p>
+                </div>
+                <div class="tech-item">
+                    <img alt="tech-icon" src="./icons/CSS3.png"/>
+                    <p class="icon-text">CSS3</p>
+                </div>
+                <div class="tech-item">
+                    <img alt="tech-icon" src="./icons/HTML5.png"/>
+                    <p class="icon-text">HTML5</p>
+                </div>
+            </section>
+        </div>
+        
+        <div class="h-2"></div>
+        <!-- Projects -->
+        <div class="project-flex">
+            <h2 class="section-title">Projects</h2>
+            <div class="h-2"></div>
+            <section class="project-section">
+                <!-- Project: Gloria External Site -->
+                <div class="project">
+                    <div class="project-expand-button" aria-expanded="false">
+                        <i class="fa-solid fa-angle-down project-expand-down"></i>
+                        <i class="fa-solid fa-angle-up project-expand-up hidden"></i>
+                    </div>          
+                    <p class="project-title">Gloria</p>
+                    <img class="project-icon" alt="project-icon" src="./icons/gloria-logo.png" />
+                    <p class="project-title-expanded hidden">Technologies</p>
+                    <div class="h-1"></div>
+                    <p class="project-description">External website for Gloria healthcare company with responsive pages and seamless navigation </p>
+                    <div class="project-description-expanded hidden">
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">JavaScript Website</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">UX/UI Design</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Custom UI Components</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Form Submission</p></span>
+                    </div> 
+                    <a class="launch-app" href="https://gloriatech.netlify.app/" target="_blank">
+                        <span><i class="fa-solid fa-circle-arrow-right"></i>Launch App</span>
+                    </a>
+                </div>  
+                <div class="h-2"></div>
+                <!-- Project: Dice Dash -->
+                <div class="project">
+                    <div class="project-expand-button" aria-expanded="false">
+                        <i class="fa-solid fa-angle-down project-expand-down"></i>
+                        <i class="fa-solid fa-angle-up project-expand-up hidden"></i>
+                    </div>          
+                    <p class="project-title">Dice Dash</p>
+                    <img class="project-icon" alt="project-icon" src="./icons/dice-icon.jpg" />
+                    <p class="project-title-expanded hidden">Technologies</p>
+                    <div class="h-1"></div>
+                    <p class="project-description">Fast-paced dice rolling, racing against the clock, and real-time leaderboard competition. </p>
+                    <div class="project-description-expanded hidden">
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">React Application</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Firebase backend</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">User Authentication</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Local Storage</p></span>
+                    </div> 
+                    <a class="launch-app" href="https://dicee-dashh.netlify.app/" target="_blank">
+                        <span><i class="fa-solid fa-circle-arrow-right"></i>Launch App</span>
+                    </a>
+                </div>         
+                <div class="h-2"></div>
+                <!-- Project: Think Tally -->
+                <div class="project">
+                    <div class="project-expand-button" aria-expanded="false">
+                        <i class="fa-solid fa-angle-down project-expand-down"></i>
+                        <i class="fa-solid fa-angle-up project-expand-up hidden"></i>
+                    </div>          
+                    <p class="project-title">Think Tally</p>
+                    <img class="project-icon" alt="project-icon" src="./icons/trivia-icon.jpg" />
+                    <p class="project-title-expanded hidden">Technologies</p>
+                    <div class="h-1"></div>
+                    <p class="project-description">Modifiable trivia quiz. Pick your question count, difficulty, and format, then get your score instantly after the quiz.</p>
+                    <div class="project-description-expanded hidden">
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">React Application</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">React Controlled Component</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">RESTful API</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Grading System</p></span>
+                    </div> 
+                    <a class="launch-app" href="https://thinkk-tallyy.netlify.app/" target="_blank">
+                        <span><i class="fa-solid fa-circle-arrow-right"></i>Launch App</span>
+                    </a>
+                </div>         
+                <div class="h-2"></div>
+                <!-- Project: React Suite -->
+                <div class="project">
+                    <div class="project-expand-button" aria-expanded="false">
+                        <i class="fa-solid fa-angle-down project-expand-down"></i>
+                        <i class="fa-solid fa-angle-up project-expand-up hidden"></i>
+                    </div>          
+                    <p class="project-title">React Suite</p>
+                    <img class="project-icon" alt="project-icon" src="./icons/component-icon.jpg" />
+                    <p class="project-title-expanded hidden">Technologies</p>
+                    <div class="h-1"></div>
+                    <p class="project-description">Customizable, responsive React components like badges, banners, cards, and testimonials.</p>
+                    <div class="project-description-expanded hidden">
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">React Application</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">React Router 6</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Context API</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Component Library</p></span>
+                    </div> 
+                    <a class="launch-app" href="https://reactt-suitee.netlify.app/" target="_blank">
+                        <span><i class="fa-solid fa-circle-arrow-right"></i>Launch App</span>
+                    </a>
+                </div>         
+                <div class="h-2"></div>
+                <!-- Project: Movie Minder -->
+                <div class="project">
+                    <div class="project-expand-button" aria-expanded="false">
+                        <i class="fa-solid fa-angle-down project-expand-down"></i>
+                        <i class="fa-solid fa-angle-up project-expand-up hidden"></i>
+                    </div>          
+                    <p class="project-title">Movie Minder</p>
+                    <img class="project-icon" alt="project-icon" src="./icons/movie-icon.jpg" />
+                    <p class="project-title-expanded hidden">Technologies</p>
+                    <div class="h-1"></div>
+                    <p class="project-description">Search for movies, explore details like rating, genre, and plot, and save your favorites to a watchlist.</p>
+                    <div class="project-description-expanded hidden">
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">JavaScript Application</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">RESTful API</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Search Functionality</p></span>
+                        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Mode Toggle</p></span>
+                    </div> 
+                    <a class="launch-app" href="https://moviee-minderr.netlify.app/" target="_blank">
+                        <span><i class="fa-solid fa-circle-arrow-right"></i>Launch App</span>
+                    </a>
+                </div>         
+            </section>
+        </div>
+    </div>
+    
+
+    <div class="h-2"></div>
+    <div class="h-2"></div>
+
+    <!--Footer-->
+    <footer id="footer">
+        <a class="footer-nav-item" href="mailto:seanmcgowanx@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a class="footer-nav-item" href="tel:+18084303271" aria-label="Phone">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a class="footer-nav-item" href="https://www.linkedin.com/in/seanmdev" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="footer-nav-item" href="https://github.com/seanmcgowanx" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </footer>    
+</body>   
+</html>
